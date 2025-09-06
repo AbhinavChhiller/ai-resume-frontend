@@ -13,6 +13,8 @@ import { View } from "lucide-react";
 import ViewResume from "./my-resume/[resumeId]/view";
 
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
+console.log("Clerk Key:", PUBLISHABLE_KEY);
+
 if (!PUBLISHABLE_KEY) {
 	throw new Error("Missing Publishable Key");
 }
