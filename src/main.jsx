@@ -12,10 +12,10 @@ import ErrorPage from "./components/custom/ErrorPage";
 import { View } from "lucide-react";
 import ViewResume from "./my-resume/[resumeId]/view";
 
-console.log("All env vars:", import.meta.env);
+// console.log("All env vars:", import.meta.env);
 
 const PUBLISHABLE_KEY = import.meta.env.VITE_CLERK_PUBLISHABLE_KEY;
-console.log("Clerk Key:", PUBLISHABLE_KEY);
+// console.log("Clerk Key:", PUBLISHABLE_KEY);
 
 if (!PUBLISHABLE_KEY) {
 	throw new Error("Missing Publishable Key");
